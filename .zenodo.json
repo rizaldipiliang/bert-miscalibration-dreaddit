@@ -1,0 +1,34 @@
+{
+  "title": "Vanilla BERT Confidence Miscalibration on Dreaddit: Reproducibility Package",
+  "upload_type": "software",
+  "description": "Reproducibility package for the 2026 Journal of Information Systems and Informatics article on confidence miscalibration in Vanilla BERT-based stress detection using Dreaddit. Includes training and evaluation code, calibration metrics, a reproducibility notebook, citation metadata, and release guidance. The third-party Dreaddit dataset is not redistributed.",
+  "creators": [
+    {"name": "Rizaldi"},
+    {"name": "Kusrini"},
+    {"name": "Ema Utami"},
+    {"name": "I Made Artha Agastya"}
+  ],
+  "keywords": [
+    "BERT",
+    "Dreaddit",
+    "stress detection",
+    "confidence calibration",
+    "expected calibration error",
+    "adaptive calibration error",
+    "uncertainty estimation",
+    "mental health NLP"
+  ],
+  "license": "MIT",
+  "related_identifiers": [
+    {
+      "identifier": "10.63158/journalisi.v8i3.1634",
+      "relation": "isSupplementTo",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.18653/v1/D19-6213",
+      "relation": "references",
+      "scheme": "doi"
+    }
+  ]
+}

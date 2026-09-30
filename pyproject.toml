@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bert-dreaddit-calibration"
+version = "0.1.0"
+description = "Reproducibility utilities for Vanilla BERT confidence calibration analysis on Dreaddit."
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+  {name = "Rizaldi"},
+  {name = "Kusrini"},
+  {name = "Ema Utami"},
+  {name = "I Made Artha Agastya"}
+]
+
+[tool.setuptools]
+packages = ["src"]

@@ -1,0 +1,29 @@
+name: smoke-test
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  python:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install lightweight test dependencies
+        run: pip install numpy pandas scikit-learn
+      - name: Compile source
+        run: python -m compileall src scripts
+      - name: Metric smoke test
+        run: |
+          python - <<'PY'
+          import numpy as np
+          from src.metrics import all_metrics
+          y = np.array([0,1,1,0])
+          p = np.array([[.8,.2],[.1,.9],[.4,.6],[.7,.3]])
+          metrics, _, _ = all_metrics(y, p)
+          assert metrics["accuracy"] == 1.0
+          print(metrics)
+          PY

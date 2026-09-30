@@ -1,0 +1,39 @@
+cff-version: 1.2.0
+message: "If you use this repository or baseline, please cite the associated journal article and the original Dreaddit dataset paper."
+title: "Vanilla BERT Confidence Miscalibration on Dreaddit: Reproducibility Package"
+type: software
+authors:
+  - family-names: "Rizaldi"
+  - family-names: "Kusrini"
+  - family-names: "Utami"
+    given-names: "Ema"
+  - family-names: "Agastya"
+    given-names: "I Made Artha"
+license: MIT
+repository-code: "https://github.com/rizaldipiliang/bert-miscalibration-dreaddit"
+keywords:
+  - BERT
+  - calibration
+  - expected calibration error
+  - uncertainty estimation
+  - stress detection
+  - Dreaddit
+  - mental health NLP
+preferred-citation:
+  type: article
+  title: "An Empirical Evaluation of Confidence Miscalibration in Vanilla BERT-Based Stress Detection on Social Media"
+  authors:
+    - family-names: "Rizaldi"
+    - family-names: "Kusrini"
+    - family-names: "Utami"
+      given-names: "Ema"
+    - family-names: "Agastya"
+      given-names: "I Made Artha"
+  journal: "Journal of Information Systems and Informatics"
+  volume: 8
+  issue: 3
+  start: 3014
+  end: 3034
+  year: 2026
+  month: 6
+  doi: "10.63158/journalisi.v8i3.1634"
